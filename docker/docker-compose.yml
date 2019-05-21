@@ -1,0 +1,6 @@
+version: '3'
+services:
+  hellojetty:
+    build: .
+    ports:
+      - "9290:9290"

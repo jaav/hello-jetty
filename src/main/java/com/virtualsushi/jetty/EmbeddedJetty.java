@@ -47,7 +47,7 @@ public class EmbeddedJetty {
         ServletContextHandler contextHandler = new ServletContextHandler(ServletContextHandler.SESSIONS); // SESSIONS requerido para JSP
         contextHandler.setErrorHandler(null);
 
-        contextHandler.setResourceBase(new ClassPathResource(RESOURCES_DIRECTORY).getURI().toString());
+//        contextHandler.setResourceBase(new ClassPathResource(RESOURCES_DIRECTORY).getURI().toString());
         contextHandler.setContextPath(CONTEXT_PATH);
 
         // JSP
