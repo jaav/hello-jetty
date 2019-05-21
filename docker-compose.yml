@@ -1,6 +1,9 @@
 version: '3'
 services:
-  hellojetty:
+  '39':
     build: .
     ports:
       - "9290:9290"
+    volumes:
+      - ./target:/myvol
+    command: ["java", "-jar", "/myvol/SpringJettyEx-1.0-SNAPSHOT-jar-with-dependencies.jar"]
